@@ -2,6 +2,7 @@
 import { instance } from "@/src/service/api"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { Menu } from "@/src/components/Menu"
 
  interface User{
         
@@ -34,7 +35,8 @@ useEffect(() => {
 }, [])
 
     return(
-        <div>
+        <div className="flex flex-col h-screen bg-gray-100">
+            <Menu/>
             <h1>Lista de Usuarios </h1>
 
             <Link href="/users/create">Cadastrar</Link>

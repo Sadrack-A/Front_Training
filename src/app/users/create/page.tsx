@@ -3,7 +3,7 @@ import { instance } from "@/src/service/api"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import React from "react"
-
+import { Menu } from "@/src/components/Menu"
 
 
 
@@ -44,6 +44,7 @@ export default function CreateUser(){
    return(
 
         <div>
+          <Menu/>  
             <h1>Cadastro de user</h1>
 
             <Link href="/users/list">Listar</Link>
